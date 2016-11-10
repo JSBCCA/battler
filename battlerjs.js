@@ -12,3 +12,5 @@
 // zelda
 // samus
 // sora
+// donald
+// goofy
