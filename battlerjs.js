@@ -14,3 +14,9 @@
 // sora
 // donald
 // goofy
+
+// character: image, name, number, alliance
+// if character > other character:
+// show accurate symbol between
+// else:
+// they're tied
