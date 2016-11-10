@@ -16,8 +16,8 @@ body {
 #flip {
   transform: scale(-1, 1);
 }
-#godzilla {
+#image_1 {
   width: 71.3%;
   transform: scale(-1, 1);
 }
-#bambi {width: 70%;}
+#image_2 {width: 70%;}
