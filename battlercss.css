@@ -2,6 +2,7 @@
   /*padding: 1em;*/
   /*border-width: thin;*/
   /*border-style: dashed;*/
+  /*border-color: white;*/
 }
 html,body {
   width: 100%;
@@ -12,12 +13,30 @@ html,body {
 }
 body {
   background-size: 100%;
+  background-image: url("images/battler.jpg");
+  background-repeat: no-repeat;
 }
-#flip {
-  transform: scale(-1, 1);
+.div_0 {
+  padding-top: 5%;
+}
+.div_1 {
+}
+.div_2 {
 }
 #image_1 {
   width: 71.3%;
   transform: scale(-1, 1);
+  border-width: medium;
+  border-style: solid;
+  border-color: red;
+  background-color: white;
+  position: relative;
+  left: 28%;
 }
-#image_2 {width: 70%;}
+#image_2 {
+  width: 70%;
+  border-width: medium;
+  border-style: solid;
+  border-color: blue;
+  background-color: white;
+}
