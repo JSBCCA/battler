@@ -1,12 +1,23 @@
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+* {
+  /*padding: 1em;*/
+  /*border-width: thin;*/
+  /*border-style: dashed;*/
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 body {
   background-size: 100%;
 }
-#flip {transform: scale(-1, 1);}
+#flip {
+  transform: scale(-1, 1);
+}
+#godzilla {
+  width: 71.3%;
+  transform: scale(-1, 1);
+}
+#bambi {width: 70%;}
