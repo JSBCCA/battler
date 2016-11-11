@@ -24,7 +24,7 @@ body {
   color: rgb(227, 3, 255);
 }
 .char_1 {
-  background-image: url("images/teletubbies_sun.jpg");
+  background-image: url("images/obama.jpg");
   background-size: 300px 420px;
   background-repeat: no-repeat;
   height: 420px;
@@ -38,7 +38,7 @@ body {
   left: 10%;
 }
 .char_2 {
-  background-image: url("images/sauron.jpg");
+  background-image: url("images/gogeta.png");
   background-size: 300px 420px;
   background-repeat: no-repeat;
   height: 420px;

@@ -2,11 +2,9 @@
 // rosalina
 // zelda
 // samus
-// sora
 // donald
 // goofy
 // doctor strange
-// spider man
 // joker
 // captain america
 // thor
