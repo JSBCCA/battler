@@ -1,12 +1,3 @@
-// kim kardashian
-// hermione
-// justin bieber
-// elsa
-// storm
-// voldemort
-// papyrus
-// gogeta
-// princess bubblegum
 // peach
 // rosalina
 // zelda
@@ -17,13 +8,12 @@
 // doctor strange
 // spider man
 // joker
-// hulk
 // captain america
 // thor
 // loki
 // wolverine
 // finn
-// iron man
+// sephiroth
 
 
 // start with just undertale and avengers, then add others
