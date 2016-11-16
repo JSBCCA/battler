@@ -4,41 +4,42 @@
   border-style: dashed;
   border-color: white;*/
 }
-html,body {
-  margin: 0px;
+html, body {
   padding: 0px;
   overflow-x: hidden;
 }
 body {
-  background-size: 100%;
+  padding-top: 7%;
+  background-size: 110%;
+  background-position: top;
   background-image: url("battler.jpg");
   background-repeat: no-repeat;
 }
 .div_0 {
-  padding-top: 7%;
+  position: relative;
+  margin: auto 5% auto 5%;
 }
 .mid_div {
   margin-top: 6%;
   font-size: 1200%;
-  left: 17%;
+  left: 14%;
   color: rgb(227, 3, 255);
 }
 .char_1 {
-  background-image: url("images/obama.jpg");
+  background-image: url("question.jpg");
   background-size: 300px 420px;
   background-repeat: no-repeat;
   height: 420px;
   width: 300px;
-  transform: scale(-1, 1);
   border-width: medium;
   border-style: solid;
   border-color: red;
   background-color: white;
   position: relative;
-  left: 10%;
+  left: 8%;
 }
 .char_2 {
-  background-image: url("images/gogeta.png");
+  background-image: url("question.jpg");
   background-size: 300px 420px;
   background-repeat: no-repeat;
   height: 420px;
@@ -48,14 +49,13 @@ body {
   border-color: blue;
   background-color: white;
   position: relative;
-  left: 20%;
+  left: 16%;
 }
 .txt1 {
-  margin-top: 142%;
+  margin-top: 145%;
   width: 100%;
-  transform: scale(-1, 1);
 }
 .txt2 {
-  margin-top: 142%;
+  margin-top: 145%;
   width: 100%;
 }

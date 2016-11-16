@@ -31,7 +31,7 @@ everything: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
               "sailor moon": ["images/sailor_moon.jpg", 6500, "none"],
               "mario": ["images/mario.png", 890, "none"],
               "luigi": ["images/luigi.jpg", 890, "weakness"],
-              "peach": ["images/peach.png", 851, "none"],
+              "princess peach": ["images/peach.png", 851, "none"],
               "rosalina": ["images/rosalina.png", 1070, "none"],
               "link": ["images/link.png", 880, "none"],
               "zelda": ["images/zelda.png", 850, "none"],
@@ -83,11 +83,20 @@ everything: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
     symbol: function() {
       // change symbol here, based on who won battle
     },
-    battle: function() {
+    battle: function(power1, power2, attr1, attr2) {
+      if (power1 > power2) {
+        $("#sym").text(">");
+      }
+      else if (power1 < power2) {
+        $("#sym").text("<");
+      }
+      else {
+        $("#sym").text("=");
+      }
       // get info from char functions and
       // return who won, using loops and stuff
     },
-    char1_func: function() {
+    char1_func: function(power2, attr2) {
       try {
         var chara1 = $('#chara1').val();
         var image1 = who_wins.everything[chara1][0];
@@ -96,9 +105,10 @@ everything: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
         $('.char_1').css("background-image", "url(" + image1 + ")");
      } finally {
         return false;
+        this.battle(power1, power2, attr1, attr2);
      }
     },
-    char2_func: function() {
+    char2_func: function(power1, attr1) {
       try {
         var chara2 = $('#chara2').val();
         var image2 = who_wins.everything[chara2][0];
@@ -107,6 +117,7 @@ everything: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
         $('.char_2').css("background-image", "url(" + image2 + ")");
       } finally {
         return false;
+        this.battle(power1, power2, attr1, attr2);
      }
     }
 }
