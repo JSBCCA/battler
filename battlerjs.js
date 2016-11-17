@@ -93,7 +93,6 @@ everything: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
       else {
         $("#sym").text("=");
       }
-      // get info from char functions and
       // return who won, using loops and stuff
     },
     char1_func: function(power2, attr2) {
