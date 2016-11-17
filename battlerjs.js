@@ -88,6 +88,27 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
       var power2 = who_wins.battler[chara2][1];
       var attr2 = who_wins.battler[chara2][2];
 
+      if (chara1 == "doctor strange" && attr2 == "magicform") {
+        $("#sym").text(">");
+      }
+      else if (attr1 == "magicform" && chara2 == "doctor strange") {
+        $("#sym").text("<");
+      }
+      else {
+      if (chara1 == "batman" && attr2 == "weakness") {
+        $("#sym").text(">");
+      }
+      else if (attr1 == "weakness" && chara2 == "batman") {
+        $("#sym").text("<");
+      }
+      else {
+      if (chara1 == "sans" && attr2 == "bloodlust") {
+        $("#sym").text(">");
+      }
+      else if (attr1 == "bloodlust" && chara2 == "sans") {
+        $("#sym").text("<");
+      }
+      else {
       if (power1 > power2) {
         $("#sym").text(">");
       }
@@ -96,9 +117,9 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
       }
       else {
         $("#sym").text("=");
-      }
-      // loops
+      }}}}
     },
+
     char1_func: function() {
       try {
         var chara1 = $('#chara1').val();
@@ -109,6 +130,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
         return false;
      }
     },
+
     char2_func: function() {
       try {
         var chara2 = $('#chara2').val();
@@ -119,6 +141,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
         return false;
      }
     }
+
 }
 
 $("#form1").submit(who_wins.char1_func);
