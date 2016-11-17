@@ -146,3 +146,10 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
 
 $("#form1").submit(who_wins.char1_func);
 $("#form2").submit(who_wins.char2_func);
+
+$( "#chara1" ).autocomplete({
+  source: Object.keys(who_wins.battler)
+});
+$( "#chara2" ).autocomplete({
+  source: Object.keys(who_wins.battler)
+});
