@@ -11,14 +11,14 @@
 // 1 = 2
 
 var who_wins = {
-everything: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
+battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
               "barrack obama": ["images/obama.jpg", 16, "none"],
               "hillary clinton": ["images/clinton.jpg", 13, "none"],
               "donald trump": ["images/donald_trump.jpg", 15, "none"],
               "justin bieber": ["images/justin_bieber.jpg", 11, "none"],
               "teletubbies sun": ["images/teletubbies_sun.jpg", 100, "magicform"],
               "bambi": ["images/bambi.png", 1, "none"],
-              "elsa": ["images/elsa.png", 750, ""],
+              "elsa": ["images/elsa.png", 750, "none"],
               "goofy": ["images/goofy.png", 62, "none"],
               "donald duck": ["images/donald_duck.png", 64, "none"],
               "godzilla": ["images/godzilla.jpg", 5000, "none"],
@@ -81,9 +81,13 @@ everything: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
               "chara": ["images/chara.png", 99, "bloodlust"]},
 
     symbol: function() {
-      // change symbol here, based on who won battle
-    },
-    battle: function(power1, power2, attr1, attr2) {
+      var chara1 = $('#chara1').val();
+      var power1 = who_wins.battler[chara1][1];
+      var attr1 = who_wins.battler[chara1][2];
+      var chara2 = $('#chara2').val();
+      var power2 = who_wins.battler[chara2][1];
+      var attr2 = who_wins.battler[chara2][2];
+
       if (power1 > power2) {
         $("#sym").text(">");
       }
@@ -93,30 +97,26 @@ everything: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
       else {
         $("#sym").text("=");
       }
-      // return who won, using loops and stuff
+      // loops
     },
-    char1_func: function(power2, attr2) {
+    char1_func: function() {
       try {
         var chara1 = $('#chara1').val();
-        var image1 = who_wins.everything[chara1][0];
-        var power1 = who_wins.everything[chara1][1];
-        var attr1 = who_wins.everything[chara1][2];
+        var image1 = who_wins.battler[chara1][0];
         $('.char_1').css("background-image", "url(" + image1 + ")");
+        who_wins.symbol();
      } finally {
         return false;
-        this.battle(power1, power2, attr1, attr2);
      }
     },
-    char2_func: function(power1, attr1) {
+    char2_func: function() {
       try {
         var chara2 = $('#chara2').val();
-        var image2 = who_wins.everything[chara2][0];
-        var power2 = who_wins.everything[chara2][1];
-        var attr2 = who_wins.everything[chara2][2];
+        var image2 = who_wins.battler[chara2][0];
         $('.char_2').css("background-image", "url(" + image2 + ")");
+        who_wins.symbol();
       } finally {
         return false;
-        this.battle(power1, power2, attr1, attr2);
      }
     }
 }
