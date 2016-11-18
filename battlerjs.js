@@ -13,33 +13,37 @@
 var who_wins = {
 battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "barrack obama": ["images/obama.jpg", 16, "none"],
+          "bill clinton": ["images/bill_clinton.jpg", 14, "none"],
           "hillary clinton": ["images/clinton.jpg", 13, "none"],
           "donald trump": ["images/donald_trump.jpg", 15, "none"],
           "justin bieber": ["images/justin_bieber.jpg", 11, "none"],
           "teletubbies sun": ["images/teletubbies_sun.jpg", 100, "magicform"],
           "bambi": ["images/bambi.png", 2, "none"],
           "elsa": ["images/elsa.png", 750, "none"],
+          "mickey mouse": ["images/mickey.png", 856, "weakness"],
           "goofy": ["images/goofy.png", 62, "none"],
           "donald duck": ["images/donald_duck.png", 64, "none"],
           "godzilla": ["images/godzilla.jpg", 5000, "none"],
+          "alucard": ["images/alucard.png", 9993, "magicform"],
           "goku": ["images/goku.png", 9001, "none"],
           "vegeta": ["images/vegeta.png", 9000, "none"],
-          "gogeta": ["images/gogeta.png", 9800, "none"],
+          "super vegito": ["images/vegito.png", 9994, "none"],
+          "super gogeta": ["images/gogeta.png", 9800, "none"],
           "majin buu": ["images/majin_buu.png", 8000, "bloodlust"],
           "naruto": ["images/naruto.png", 6400, "none"],
-          "sasuke": ["images/sasuke.png", 6600, "none"],
+          "sasuke": ["images/sasuke.png", 7010, "none"],
           "sailor moon": ["images/sailor_moon.jpg", 6500, "none"],
           "mario": ["images/mario.png", 850, "none"],
           "luigi": ["images/luigi.jpg", 850, "weakness"],
           "princess peach": ["images/peach.png", 842, "none"],
           "rosalina": ["images/rosalina.png", 1070, "none"],
-          "link": ["images/link.png", 860, "none"],
+          "link": ["images/link.png", 860, "weakness"],
           "zelda": ["images/zelda.png", 840, "none"],
           "samus": ["images/samus.jpg", 870, "none"],
-          "sonic the hedgehog": ["images/sonic.jpg", 1070, "none"],
+          "sonic the hedgehog": ["images/sonic.jpg", 1070, "weakness"],
           "shadow the hedgehog": ["images/shadow.png", 1069, "none"],
           "mega man": ["images/mega_man.png", 820, "none"],
-          "chun li": ["images/chun_li.png", 620, "none"],
+          "chun li": ["images/chun_li.png", 620, "weakness"],
           "cloud": ["images/cloud.png", 900, "none"],
           "sephiroth": ["images/sephiroth.png", 1100, "bloodlust"],
           "sora": ["images/sora.png", 920, "none"],
@@ -70,6 +74,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "wolverine": ["images/wolverine.jpg", 1000, "none"],
           "storm": ["images/storm.png", 1050, "none"],
           "doctor strange": ["images/doctor_strange.jpg", 8100, "none"],
+          "deadpool": ["images/deadpool.jpg", 7001, "bloodlust"],
           "shrek": ["images/shrek.png", 70, "none"],
           "homer simpson": ["images/homer.jpg", 15, "none"],
           "sans": ["images/sans.jpg", 1, "magicform"],
@@ -79,12 +84,11 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "asgore": ["images/asgore.png", 80, "magicform"],
           "flowey": ["images/flowey.jpg", 3, "bloodlust"],
           "chara": ["images/chara.png", 99, "bloodlust"]},
-          // add cthulu, deadpool, green lantern, aquaman?
-          // add gohan, cell, frieza, garfield, optimus prime?
+          // add cthulu, frieza, green lantern, aquaman?
+          // add gohan, cell, ryu, garfield, optimus prime?
           // add care bear, nicholas cage, george washington?
           // add mettaton EX, asriel dreamurr, jason voorhees?
-          // add bill clinton, mickey mouse, vegito, dracula?
-          // add madara, bowser, ganondorf, riku, xemnas, ryu?
+          // add madara, bowser, ganondorf, riku, xemnas?
 
     symbol: function() {
       var chara1 = $('#chara1').val().toLowerCase();
