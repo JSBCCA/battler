@@ -96,40 +96,51 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
 
       if (chara1 == "captain america" && chara2 == "iron man") {
         $("#sym").text(">");
+        $("#sym").css("margin-top", "6%");
       }
       else if (chara1 == "iron man" && chara2 == "captain america") {
         $("#sym").text("<");
+        $("#sym").css("margin-top", "6%");
       }
       else {
       if (chara1 == "doctor strange" && attr2 == "magicform") {
         $("#sym").text(">");
+        $("#sym").css("margin-top", "6%");
       }
       else if (attr1 == "magicform" && chara2 == "doctor strange") {
         $("#sym").text("<");
+        $("#sym").css("margin-top", "6%");
       }
       else {
       if (chara1 == "batman" && attr2 == "weakness") {
         $("#sym").text(">");
+        $("#sym").css("margin-top", "6%");
       }
       else if (attr1 == "weakness" && chara2 == "batman") {
         $("#sym").text("<");
+        $("#sym").css("margin-top", "6%");
       }
       else {
       if (chara1 == "sans" && attr2 == "bloodlust") {
         $("#sym").text(">");
+        $("#sym").css("margin-top", "6%");
       }
       else if (attr1 == "bloodlust" && chara2 == "sans") {
         $("#sym").text("<");
+        $("#sym").css("margin-top", "6%");
       }
       else {
       if (power1 > power2) {
         $("#sym").text(">");
+        $("#sym").css("margin-top", "6%");
       }
       else if (power1 < power2) {
         $("#sym").text("<");
+        $("#sym").css("margin-top", "6%");
       }
       else {
         $("#sym").text("=");
+        $("#sym").css("margin-top", "6%");
       }}}}}
     },
 
