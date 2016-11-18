@@ -97,7 +97,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
       if (chara1 == "captain america" && chara2 == "iron man") {
         $("#sym").text(">");
       }
-      else if (chara1 == "iron man" && chara1 == "captain america") {
+      else if (chara1 == "iron man" && chara2 == "captain america") {
         $("#sym").text("<");
       }
       else {
