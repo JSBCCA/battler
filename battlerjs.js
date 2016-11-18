@@ -25,11 +25,12 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "weakness"],
           "donald duck": ["images/donald_duck.png", 64, "weakness"],
           "godzilla": ["images/godzilla.jpg", 5000, "none"],
           "alucard": ["images/alucard.png", 9993, "magicform"],
+          "kid buu": ["images/kid_buu.png", 9002, "bloodlust"],
           "goku": ["images/goku.png", 9001, "none"],
           "vegeta": ["images/vegeta.png", 9000, "none"],
           "super vegito": ["images/vegito.png", 9994, "none"],
           "super gogeta": ["images/gogeta.png", 9800, "none"],
-          "majin buu": ["images/majin_buu.png", 8000, "bloodlust"],
+          "majin buu": ["images/majin_buu.png", 8000, "none"],
           "naruto": ["images/naruto.png", 6400, "none"],
           "sasuke uchiha": ["images/sasuke.png", 7010, "none"],
           "sailor moon": ["images/sailor_moon.jpg", 6500, "none"],
@@ -98,6 +99,15 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "weakness"],
       var power2 = who_wins.battler[chara2][1];
       var attr2 = who_wins.battler[chara2][2];
 
+      if (chara1 == "kid buu" && chara2 == "superman") {
+        $("#sym").text(">");
+        $("#sym").css("margin-top", "6%");
+      }
+      else if (chara1 == "superman" && chara2 == "kid buu") {
+        $("#sym").text("<");
+        $("#sym").css("margin-top", "6%");
+      }
+      else {
       if (chara1 == "sasuke uchiha" && chara2 == "vegeta") {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
@@ -154,7 +164,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "weakness"],
       else {
         $("#sym").text("=");
         $("#sym").css("margin-top", "6%");
-      }}}}}}
+      }}}}}}}
     },
 
     char1_func: function() {
