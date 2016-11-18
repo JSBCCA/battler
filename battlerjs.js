@@ -80,6 +80,11 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "flowey": ["images/flowey.jpg", 3, "bloodlust"],
           "chara": ["images/chara.png", 99, "bloodlust"]},
           // add cthulu, deadpool, green lantern, aquaman?
+          // add gohan, cell, frieza, garfield, optimus prime?
+          // add care bear, nicholas cage, george washington?
+          // add mettaton EX, asriel dreamurr, jason voorhees?
+          // add bill clinton, mickey mouse, vegito, dracula?
+          // add madara, bowser, ganondorf, riku, xemnas, ryu?
 
     symbol: function() {
       var chara1 = $('#chara1').val().toLowerCase();
