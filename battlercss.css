@@ -7,7 +7,7 @@ html, body {
   padding: 0px;
 }
 body {
-  padding-top: 7%;
+  padding-top: 8%;
   background: url("images/battler.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -26,7 +26,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 420px;
   border-width: medium;
   border-style: solid;
   border-color: red;
@@ -37,20 +36,19 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 420px;
   border-width: medium;
   border-style: solid;
   border-color: blue;
   background-color: white;
 }
 .txt1 {
-  margin-top: 145%;
+  margin-top: 138%;
   width: 100%;
   border-style: solid;
   border-color: rgb(28, 173, 245);
 }
 .txt2 {
-  margin-top: 145%;
+  margin-top: 138%;
   width: 100%;
   border-style: solid;
   border-color: rgb(28, 173, 245);
