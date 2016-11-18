@@ -17,7 +17,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "donald trump": ["images/donald_trump.jpg", 15, "none"],
           "justin bieber": ["images/justin_bieber.jpg", 11, "none"],
           "teletubbies sun": ["images/teletubbies_sun.jpg", 100, "magicform"],
-          "bambi": ["images/bambi.png", 1, "none"],
+          "bambi": ["images/bambi.png", 2, "none"],
           "elsa": ["images/elsa.png", 750, "none"],
           "goofy": ["images/goofy.png", 62, "none"],
           "donald duck": ["images/donald_duck.png", 64, "none"],
@@ -79,6 +79,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "asgore": ["images/asgore.png", 80, "magicform"],
           "flowey": ["images/flowey.jpg", 3, "bloodlust"],
           "chara": ["images/chara.png", 99, "bloodlust"]},
+          // add garfield, cthulu, deadpool, green lantern, aquaman
 
     symbol: function() {
       var chara1 = $('#chara1').val();
@@ -88,6 +89,13 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
       var power2 = who_wins.battler[chara2][1];
       var attr2 = who_wins.battler[chara2][2];
 
+      if (chara1 == "captain america" && chara2 == "iron man") {
+        $("#sym").text(">");
+      }
+      else if (chara1 == "iron man" && chara1 == "captain america") {
+        $("#sym").text("<");
+      }
+      else {
       if (chara1 == "doctor strange" && attr2 == "magicform") {
         $("#sym").text(">");
       }
@@ -117,7 +125,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
       }
       else {
         $("#sym").text("=");
-      }}}}
+      }}}}}
     },
 
     char1_func: function() {

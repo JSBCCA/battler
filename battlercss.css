@@ -12,7 +12,7 @@ body {
   padding-top: 7%;
   background-size: 110%;
   background-position: top;
-  background-image: url("battler.jpg");
+  background-image: url("images/battler.jpg");
   background-repeat: no-repeat;
 }
 .div_0 {
@@ -26,7 +26,7 @@ body {
   color: rgb(227, 3, 255);
 }
 .char_1 {
-  background-image: url("question.jpg");
+  background-image: url("images/question.jpg");
   background-size: 300px 420px;
   background-repeat: no-repeat;
   height: 420px;
@@ -39,7 +39,7 @@ body {
   left: 8%;
 }
 .char_2 {
-  background-image: url("question.jpg");
+  background-image: url("images/question.jpg");
   background-size: 300px 420px;
   background-repeat: no-repeat;
   height: 420px;
