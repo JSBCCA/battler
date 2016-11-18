@@ -31,7 +31,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "super gogeta": ["images/gogeta.png", 9800, "none"],
           "majin buu": ["images/majin_buu.png", 8000, "bloodlust"],
           "naruto": ["images/naruto.png", 6400, "none"],
-          "sasuke": ["images/sasuke.png", 7010, "none"],
+          "sasuke uchiha": ["images/sasuke.png", 7010, "none"],
           "sailor moon": ["images/sailor_moon.jpg", 6500, "none"],
           "mario": ["images/mario.png", 850, "none"],
           "luigi": ["images/luigi.jpg", 850, "weakness"],
@@ -98,6 +98,15 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
       var power2 = who_wins.battler[chara2][1];
       var attr2 = who_wins.battler[chara2][2];
 
+      if (chara1 == "sasuke uchiha" && chara2 == "vegeta") {
+        $("#sym").text(">");
+        $("#sym").css("margin-top", "6%");
+      }
+      else if (chara1 == "vegeta" && chara2 == "sasuke uchiha") {
+        $("#sym").text("<");
+        $("#sym").css("margin-top", "6%");
+      }
+      else {
       if (chara1 == "captain america" && chara2 == "iron man") {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
@@ -145,7 +154,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
       else {
         $("#sym").text("=");
         $("#sym").css("margin-top", "6%");
-      }}}}}
+      }}}}}}
     },
 
     char1_func: function() {
