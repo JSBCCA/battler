@@ -29,16 +29,16 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "naruto": ["images/naruto.png", 6400, "none"],
           "sasuke": ["images/sasuke.png", 6600, "none"],
           "sailor moon": ["images/sailor_moon.jpg", 6500, "none"],
-          "mario": ["images/mario.png", 890, "none"],
-          "luigi": ["images/luigi.jpg", 890, "weakness"],
-          "princess peach": ["images/peach.png", 851, "none"],
+          "mario": ["images/mario.png", 850, "none"],
+          "luigi": ["images/luigi.jpg", 850, "weakness"],
+          "princess peach": ["images/peach.png", 842, "none"],
           "rosalina": ["images/rosalina.png", 1070, "none"],
-          "link": ["images/link.png", 880, "none"],
-          "zelda": ["images/zelda.png", 850, "none"],
-          "samus": ["images/samus.jpg", 900, "none"],
+          "link": ["images/link.png", 860, "none"],
+          "zelda": ["images/zelda.png", 840, "none"],
+          "samus": ["images/samus.jpg", 870, "none"],
           "sonic the hedgehog": ["images/sonic.jpg", 1070, "none"],
           "shadow the hedgehog": ["images/shadow.png", 1069, "none"],
-          "mega man": ["images/mega_man.png", 704, "none"],
+          "mega man": ["images/mega_man.png", 820, "none"],
           "chun li": ["images/chun_li.png", 620, "none"],
           "cloud": ["images/cloud.png", 900, "none"],
           "sephiroth": ["images/sephiroth.png", 1100, "bloodlust"],
@@ -54,10 +54,10 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "the flash": ["images/flash.jpg", 9900, "weakness"],
           "doctor manhattan": ["images/manhattan.png", 10000, "none"],
           "luke skywalker": ["images/luke_skywalker.png", 820, "none"],
-          "rey": ["images/rey.png", 71, "weakness"],
-          "darth vader": ["images/darth_vader.png", 840, "bloodlust"],
+          "rey": ["images/rey.png", 70, "weakness"],
+          "darth vader": ["images/darth_vader.png", 860, "bloodlust"],
           "harry potter": ["images/harry_potter.jpg", 75, "none"],
-          "hermione": ["images/hermione.jpg", 70, "none"],
+          "hermione": ["images/hermione.jpg", 72, "none"],
           "voldemort": ["images/voldemort.jpg", 106, "bloodlust"],
           "sauron": ["images/sauron.jpg", 1099, "magicform"],
           "master chief": ["images/master_chief.png", 900, "none"],
@@ -79,13 +79,13 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
           "asgore": ["images/asgore.png", 80, "magicform"],
           "flowey": ["images/flowey.jpg", 3, "bloodlust"],
           "chara": ["images/chara.png", 99, "bloodlust"]},
-          // add garfield, cthulu, deadpool, green lantern, aquaman
+          // add cthulu, deadpool, green lantern, aquaman?
 
     symbol: function() {
-      var chara1 = $('#chara1').val();
+      var chara1 = $('#chara1').val().toLowerCase();
       var power1 = who_wins.battler[chara1][1];
       var attr1 = who_wins.battler[chara1][2];
-      var chara2 = $('#chara2').val();
+      var chara2 = $('#chara2').val().toLowerCase();
       var power2 = who_wins.battler[chara2][1];
       var attr2 = who_wins.battler[chara2][2];
 
@@ -130,7 +130,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
 
     char1_func: function() {
       try {
-        var chara1 = $('#chara1').val();
+        var chara1 = $('#chara1').val().toLowerCase();
         var image1 = who_wins.battler[chara1][0];
         $('.char_1').css("background-image", "url(" + image1 + ")");
         who_wins.symbol();
@@ -141,7 +141,7 @@ battler: {"abraham lincoln": ["images/abe.jpg", 15, "none"],
 
     char2_func: function() {
       try {
-        var chara2 = $('#chara2').val();
+        var chara2 = $('#chara2').val().toLowerCase();
         var image2 = who_wins.battler[chara2][0];
         $('.char_2').css("background-image", "url(" + image2 + ")");
         who_wins.symbol();

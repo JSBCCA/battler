@@ -1,61 +1,57 @@
 * {
-  /*padding: 1em;*/
   /*border-width: thin;
   border-style: dashed;
   border-color: white;*/
 }
 html, body {
   padding: 0px;
-  overflow-x: hidden;
 }
 body {
   padding-top: 7%;
-  background-size: 110%;
-  background-position: top;
-  background-image: url("images/battler.jpg");
+  background: url("images/battler.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
-.div_0 {
-  position: relative;
-  margin: auto 5% auto 5%;
-}
 .mid_div {
-  margin-top: 6%;
+  margin-top: 7%;
   font-size: 1200%;
-  left: 13%;
   color: rgb(227, 3, 255);
+  text-align: center;
 }
 .char_1 {
   background-image: url("images/question.jpg");
-  background-size: 300px 420px;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   height: 420px;
-  width: 300px;
   border-width: medium;
   border-style: solid;
   border-color: red;
   background-color: white;
-  position: relative;
-  left: 8%;
 }
 .char_2 {
-  background-image: url("images/question.jpg");
-  background-size: 300px 420px;
+  background-image: url("images/question.jpg") ;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   height: 420px;
-  width: 300px;
   border-width: medium;
   border-style: solid;
   border-color: blue;
   background-color: white;
-  position: relative;
-  left: 16%;
 }
 .txt1 {
   margin-top: 145%;
   width: 100%;
+  border-style: solid;
+  border-color: rgb(28, 173, 245);
 }
 .txt2 {
   margin-top: 145%;
   width: 100%;
+  border-style: solid;
+  border-color: rgb(28, 173, 245);
 }
