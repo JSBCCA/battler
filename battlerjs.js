@@ -47,7 +47,8 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
            "samus": ["images/samus.jpg", 870, "none"],
            "loki": ["images/loki.jpg", 900, "bloodlust"],
            "master chief": ["images/master_chief.png", 900, "none"],
-           "cloud": ["images/cloud.png", 900, "none"],
+           "cloud": ["images/cloud.png", 910, "none"],
+           "riku": ["images/riku.jpg", 910, "none"],
            "sora": ["images/sora.png", 920, "none"],
            "wolverine": ["images/wolverine.jpg", 1000, "none"],
            "iron man": ["images/iron_man.jpg", 1000, "weakness"],
@@ -77,10 +78,10 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
            "superman": ["images/superman.jpg", 9990, "weakness"],
            "alucard": ["images/alucard.png", 9993, "magicform"],
            "super vegito": ["images/vegito.png", 9994, "none"],
+           "cthulu": ["images/cthulu.jpg", 9996, "magicform"],
            "bill cipher": ["images/bill_cipher.jpg", 9999, "magicform"],
            "doctor manhattan": ["images/manhattan.png", 10000, "none"]},
-// cthulu, frieza, green lantern, aquaman, asriel, xemnas, cell, ganondorf
-// optimus prime, steven universe, madara, riku, jason voorhees, bowser, ryu
+           // frieza, asriel, xemnas, cell, ganondorf, madara, jason, ryu, bowser
 
     symbol: function() {
       var chara1 = $('#chara1').val().toLowerCase();
