@@ -81,7 +81,7 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
            "super gogeta": ["images/gogeta.png", 9800, "none"],
            "the flash": ["images/flash.jpg", 9900, "weakness"],
            "superman": ["images/superman.jpg", 9990, "weakness"],
-           "alucard": ["images/alucard.png", 9993, "magicform"],
+           "alucard": ["images/alucard.png", 9993, "magicform/bloodlust"],
            "super vegito": ["images/vegito.png", 9994, "none"],
            "cthulu": ["images/cthulu.jpg", 9996, "magicform"],
            "bill cipher": ["images/bill_cipher.jpg", 9999, "magicform"],
@@ -123,11 +123,11 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
         $("#sym").css("margin-top", "6%");
       }
       else {
-      if (chara1 == "doctor strange" && attr2 == "magicform") {
+      if (chara1 == "doctor strange" && (attr2 == "magicform" || attr2 == "magicform/bloodlust")) {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
       }
-      else if (attr1 == "magicform" && chara2 == "doctor strange") {
+      else if ((attr1 == "magicform" || attr1 == "magicform/bloodlust") && chara2 == "doctor strange") {
         $("#sym").text("<");
         $("#sym").css("margin-top", "6%");
       }
@@ -141,11 +141,11 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
         $("#sym").css("margin-top", "6%");
       }
       else {
-      if (chara1 == "sans" && attr2 == "bloodlust") {
+      if (chara1 == "sans" && (attr2 == "bloodlust" || attr2 == "magicform/bloodlust")) {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
       }
-      else if (attr1 == "bloodlust" && chara2 == "sans") {
+      else if ((attr1 == "bloodlust" || attr1 == "magicform/bloodlust") && chara2 == "sans") {
         $("#sym").text("<");
         $("#sym").css("margin-top", "6%");
       }
