@@ -91,10 +91,10 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
     symbol: function() {
       var chara1 = $('#chara1').val().toLowerCase();
       var power1 = who_wins.battlers[chara1][1];
-      var attr1 = who_wins.battlers[chara1][2];
+      var char1_attr1 = who_wins.battlers[chara1][2];
       var chara2 = $('#chara2').val().toLowerCase();
       var power2 = who_wins.battlers[chara2][1];
-      var attr2 = who_wins.battlers[chara2][2];
+      var char2_attr1 = who_wins.battlers[chara2][2];
 
       if (chara1 == "kid buu" && chara2 == "superman") {
         $("#sym").text(">");
@@ -104,8 +104,7 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
         $("#sym").text("<");
         $("#sym").css("margin-top", "6%");
       }
-      else {
-      if (chara1 == "sasuke uchiha" && chara2 == "vegeta") {
+      else if (chara1 == "sasuke uchiha" && chara2 == "vegeta") {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
       }
@@ -113,8 +112,7 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
         $("#sym").text("<");
         $("#sym").css("margin-top", "6%");
       }
-      else {
-      if (chara1 == "captain america" && chara2 == "iron man") {
+      else if (chara1 == "captain america" && chara2 == "iron man") {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
       }
@@ -122,35 +120,31 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
         $("#sym").text("<");
         $("#sym").css("margin-top", "6%");
       }
-      else {
-      if (chara1 == "doctor strange" && (attr2 == "magicform" || attr2 == "magicform/bloodlust")) {
+      else if (chara1 == "doctor strange" && (char2_attr1 == "magicform" || char2_attr1 == "magicform/bloodlust")) {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
       }
-      else if ((attr1 == "magicform" || attr1 == "magicform/bloodlust") && chara2 == "doctor strange") {
+      else if ((char1_attr1 == "magicform" || char1_attr1 == "magicform/bloodlust") && chara2 == "doctor strange") {
         $("#sym").text("<");
         $("#sym").css("margin-top", "6%");
       }
-      else {
-      if (chara1 == "batman" && attr2 == "weakness") {
+      else if (chara1 == "batman" && char2_attr1 == "weakness") {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
       }
-      else if (attr1 == "weakness" && chara2 == "batman") {
+      else if (char1_attr1 == "weakness" && chara2 == "batman") {
         $("#sym").text("<");
         $("#sym").css("margin-top", "6%");
       }
-      else {
-      if (chara1 == "sans" && (attr2 == "bloodlust" || attr2 == "magicform/bloodlust")) {
+      else if (chara1 == "sans" && (char2_attr1 == "bloodlust" || char2_attr1 == "magicform/bloodlust")) {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
       }
-      else if ((attr1 == "bloodlust" || attr1 == "magicform/bloodlust") && chara2 == "sans") {
+      else if ((char1_attr1 == "bloodlust" || char1_attr1 == "magicform/bloodlust") && chara2 == "sans") {
         $("#sym").text("<");
         $("#sym").css("margin-top", "6%");
       }
-      else {
-      if (power1 > power2) {
+      else if (power1 > power2) {
         $("#sym").text(">");
         $("#sym").css("margin-top", "6%");
       }
@@ -161,7 +155,7 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform"],
       else {
         $("#sym").text("=");
         $("#sym").css("margin-top", "6%");
-      }}}}}}}
+      }
     },
 
     char1_func: function() {
