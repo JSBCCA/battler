@@ -7,13 +7,15 @@ var who_wins = {
 battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
            "bambi": ["images/bambi.png", 2, "weakness", "none"],
            "flowey": ["images/flowey.jpg", 3, "bloodlust"],
+           "scooby doo": ["images/scooby.jpg", 11, "weakness", "none"],
            "justin bieber": ["images/justin_bieber.jpg", 11, "weakness", "none"],
            "hillary clinton": ["images/clinton.jpg", 13, "weakness", "none"],
            "bill clinton": ["images/bill_clinton.jpg", 14, "weakness", "none"],
-           "abraham lincoln": ["images/abe.jpg", 15, "weakness", "none"],
            "donald trump": ["images/donald_trump.jpg", 15, "weakness", "none"],
            "homer simpson": ["images/homer.jpg", 15, "weakness", "none"],
+           "abraham lincoln": ["images/abe.jpg", 16, "weakness", "none"],
            "barrack obama": ["images/obama.jpg", 16, "weakness", "none"],
+           "ron swanson": ["images/ron_swanson.jpg", 17, "none", "none"],
            "papyrus": ["images/papyrus.png", 20, "magicform", "none"],
            "mettaton ex": ["images/mettaton.jpg", 47, "magicform", "none"],
            "undyne": ["images/undyne.png", 50, "magicform", "none"],
@@ -29,6 +31,7 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
            "chara": ["images/chara.png", 99, "bloodlust", "none"],
            "the joker": ["images/joker.jpg", 190, "bloodlust", "none"],
            "jason vorhees": ["images/jason.jpg", 200, "bloodlust", "none"],
+           "roy mustang": ["images/roy.png", 252, "weakness", "none"],
            "harry potter": ["images/harry_potter.jpg", 595, "weakness", "none"],
            "hermione": ["images/hermione.jpg", 595, "weakness", "none"],
            "batman": ["images/batman.png", 600, "none", "none"],
@@ -36,13 +39,15 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
            "captain america": ["images/captain_america.png", 800, "weakness", "none"],
            "mega man": ["images/mega_man.png", 820, "weakness", "none"],
            "elsa": ["images/elsa.png", 821, "none", "none"],
-           "luke skywalker": ["images/luke_skywalker.png", 822, "none", "none"],
            "maleficent": ["images/maleficent.png", 823, "bloodlust", "none"],
+           "edward elric": ["images/edward.jpg", 826, "weakness", "none"],
            "zelda": ["images/zelda.png", 840, "none", "none"],
            "princess peach": ["images/peach.png", 842, "none", "none"],
            "mario": ["images/mario.png", 850, "none", "none"],
            "luigi": ["images/luigi.jpg", 850, "weakness", "none"],
-           "voldemort": ["images/voldemort.jpg", 854, "bloodlust", "none"],
+           "bowser": ["images/bowser.png", 852, "none", "none"],
+           "voldemort": ["images/voldemort.jpg", 853, "bloodlust", "none"],
+           "luke skywalker": ["images/luke_skywalker.png", 854, "none", "none"],
            "xemnas": ["images/xemnas.png", 855, "none", "none"],
            "mickey mouse": ["images/mickey.png", 856, "weakness", "none"],
            "darth vader": ["images/darth_vader.png", 860, "bloodlust", "none"],
@@ -100,63 +105,63 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
 
       if (chara1 == "kid buu" && chara2 == "superman") {
         $("#sym").text(">");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (chara1 == "superman" && chara2 == "kid buu") {
         $("#sym").text("<");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (chara1 == "sasuke uchiha" && chara2 == "vegeta") {
         $("#sym").text(">");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (chara1 == "vegeta" && chara2 == "sasuke uchiha") {
         $("#sym").text("<");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (chara1 == "captain america" && chara2 == "iron man") {
         $("#sym").text(">");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (chara1 == "iron man" && chara2 == "captain america") {
         $("#sym").text("<");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (chara1 == "doctor strange" && (char2_attr1 == "magicform" || char2_attr2 == "magicform")) {
         $("#sym").text(">");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if ((char1_attr1 == "magicform" || char1_attr2 == "magicform") && chara2 == "doctor strange") {
         $("#sym").text("<");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (chara1 == "batman" && (char2_attr1 == "weakness" || char2_attr2 == "weakness")) {
         $("#sym").text(">");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if ((char1_attr1 == "weakness" || char1_attr2 == "weakness") && chara2 == "batman") {
         $("#sym").text("<");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (chara1 == "sans" && (char2_attr1 == "bloodlust" || char2_attr2 == "bloodlust")) {
         $("#sym").text(">");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if ((char1_attr1 == "bloodlust" || char1_attr2 == "bloodlust") && chara2 == "sans") {
         $("#sym").text("<");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (power1 > power2) {
         $("#sym").text(">");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else if (power1 < power2) {
         $("#sym").text("<");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
       else {
         $("#sym").text("=");
-        $("#sym").css("margin-top", "6%");
+        $("#sym").css("margin-top", "5%");
       }
     },
 
