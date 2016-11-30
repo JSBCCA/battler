@@ -92,9 +92,11 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
       var chara1 = $('#chara1').val().toLowerCase();
       var power1 = who_wins.battlers[chara1][1];
       var char1_attr1 = who_wins.battlers[chara1][2];
+      var char1_attr2 = who_wins.battlers[chara1][3];
       var chara2 = $('#chara2').val().toLowerCase();
       var power2 = who_wins.battlers[chara2][1];
       var char2_attr1 = who_wins.battlers[chara2][2];
+      var char2_attr2 = who_wins.battlers[chara2][3];
 
       if (chara1 == "kid buu" && chara2 == "superman") {
         $("#sym").text(">");
