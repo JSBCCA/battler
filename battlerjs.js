@@ -41,15 +41,15 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
            "mega man": ["images/mega_man.png", 820, "weakness", "none"],
            "elsa": ["images/elsa.png", 821, "none", "none"],
            "maleficent": ["images/maleficent.png", 823, "bloodlust", "none"],
-           "edward elric": ["images/edward.jpg", 826, "weakness", "none"],
-           "zelda": ["images/zelda.png", 840, "none", "none"],
-           "princess peach": ["images/peach.png", 842, "none", "none"],
+           "princess peach": ["images/peach.png", 826, "none", "none"],
+           "edward elric": ["images/edward.jpg", 840, "weakness", "none"],
+           "zelda": ["images/zelda.png", 842, "none", "none"],
            "mario": ["images/mario.png", 850, "none", "none"],
            "luigi": ["images/luigi.jpg", 850, "weakness", "none"],
            "bowser": ["images/bowser.png", 852, "none", "none"],
            "voldemort": ["images/voldemort.jpg", 853, "bloodlust", "none"],
            "luke skywalker": ["images/luke_skywalker.png", 854, "none", "none"],
-           "xemnas": ["images/xemnas.png", 855, "none", "none"],
+           "xemnas": ["images/xemnas.png", 855, "bloodlust", "none"],
            "mickey mouse": ["images/mickey.png", 856, "weakness", "none"],
            "darth vader": ["images/darth_vader.png", 860, "bloodlust", "none"],
            "link": ["images/link.png", 860, "weakness", "none"],
@@ -57,10 +57,11 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
            "loki": ["images/loki.jpg", 900, "bloodlust", "none"],
            "master chief": ["images/master_chief.png", 900, "none", "none"],
            "cloud": ["images/cloud.png", 915, "none", "none"],
-           "riku": ["images/riku.jpg", 920, "none", "none"],
-           "sora": ["images/sora.png", 920, "none", "none"],
-           "wolverine": ["images/wolverine.jpg", 1000, "none", "none"],
-           "iron man": ["images/iron_man.jpg", 1000, "weakness", "none"],
+           "wolverine": ["images/wolverine.jpg", 916, "weakness", "none"],
+           "iron man": ["images/iron_man.jpg", 916, "weakness", "none"],
+           "ansem": ["images/ansem.jpg", 980, "bloodlust", "none"],
+           "riku": ["images/riku.jpg", 1000, "none", "none"],
+           "sora": ["images/sora.png", 1000, "none", "none"],
            "spider-man": ["images/spider_man.png", 1040, "none", "none"],
            "storm": ["images/storm.png", 1050, "none", "none"],
            "shadow the hedgehog": ["images/shadow.png", 1069, "none", "none"],
@@ -76,7 +77,7 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
            "the hulk": ["images/hulk.jpg", 7000, "weakness", "none"],
            "deadpool": ["images/deadpool.jpg", 7001, "bloodlust", "none"],
            "sasuke uchiha": ["images/sasuke.png", 7010, "none", "none"],
-           "madara uchiha": ["images/madara.png", 7011, "none", "none"],
+           "madara uchiha": ["images/madara.png", 7011, "bloodlust", "none"],
            "perfect cell": ["images/cell.jpg", 7600, "none", "none"],
            "majin buu": ["images/majin_buu.png", 8000, "none", "none"],
            "doctor strange": ["images/doctor_strange.jpg", 8100, "none", "none"],
@@ -93,6 +94,7 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
            "bill cipher": ["images/bill_cipher.jpg", 9999, "magicform", "none"],
            "asriel dreemurr": ["images/asriel.png", 9999, "magicform", "none"],
            "doctor manhattan": ["images/manhattan.png", 10000, "none", "none"]},
+           // 90
 
     symbol: function() {
       var chara1 = $('#chara1').val().toLowerCase();
@@ -110,6 +112,14 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
       }
       else if (chara1 == "superman" && chara2 == "kid buu") {
         $("#sym").text("<");
+        $("#sym").css("margin-top", "5%");
+      }
+      else if (chara1 == "ansem" && (chara2 == "zelda" || chara2 == "mickey mouse")) {
+        $("#sym").text("<");
+        $("#sym").css("margin-top", "5%");
+      }
+      else if ((chara1 == "zelda" || chara1 == "mickey mouse") && chara2 == "ansem") {
+        $("#sym").text(">");
         $("#sym").css("margin-top", "5%");
       }
       else if (chara1 == "sasuke uchiha" && chara2 == "vegeta") {
@@ -147,10 +157,12 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
       else if (chara1 == "sans" && (char2_attr1 == "bloodlust" || char2_attr2 == "bloodlust")) {
         $("#sym").text(">");
         $("#sym").css("margin-top", "5%");
+        //$('.char_1').css("background-image", "url(images/sansattack.gif)");
       }
       else if ((char1_attr1 == "bloodlust" || char1_attr2 == "bloodlust") && chara2 == "sans") {
         $("#sym").text("<");
         $("#sym").css("margin-top", "5%");
+        //$('.char_2').css("background-image", "url(images/sansattack.gif)");
       }
       else if (power1 > power2) {
         $("#sym").text(">");
@@ -185,7 +197,7 @@ battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
         who_wins.symbol();
       } finally {
         return false;
-     }
+      }
     }
 
 }
