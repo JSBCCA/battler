@@ -71,10 +71,11 @@ var who_wins = {
                "rosalina": ["images/rosalina.png", 1070, "none", "none"],
                "sauron": ["images/sauron.jpg", 1099, "magicform", "none"],
                "sephiroth": ["images/sephiroth.png", 1100, "bloodlust", "none"],
-               "thor": ["images/thor.png", 4000, "none", "none"],
                "godzilla": ["images/godzilla.jpg", 5000, "none", "none"],
                "sailor moon": ["images/sailor_moon.jpg", 6500, "none", "none"],
                "wonder woman": ["images/wonder_woman.jpg", 6500, "weakness", "none"],
+               "frieza": ["images/frieza.png", 6510, "bloodlust", "none"],
+               "thor": ["images/thor.png", 6550, "none", "none"],
                "naruto": ["images/naruto.png", 6570, "none", "none"],
                "the hulk": ["images/hulk.jpg", 7000, "weakness", "none"],
                "deadpool": ["images/deadpool.jpg", 7001, "bloodlust", "none"],
@@ -97,7 +98,7 @@ var who_wins = {
                "bill cipher": ["images/bill_cipher.jpg", 9999, "magicform", "none"],
                "asriel dreemurr": ["images/asriel.png", 9999, "magicform", "none"],
                "doctor manhattan": ["images/manhattan.png", 10000, "none", "none"]},
-               // 92
+               // 93
                // gandalf the grey
                // steven universe
                // pearl
