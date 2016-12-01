@@ -24,8 +24,8 @@ var who_wins = {
                "papyrus": ["images/papyrus.png", 20, "magicform", "none"],
                "mettaton ex": ["images/mettaton.jpg", 47, "magicform", "none"],
                "undyne": ["images/undyne.png", 50, "magicform", "none"],
-               "marceline": ["images/marceline.jpg", 60, "weakness", "none"],
-               "goofy": ["images/goofy.png", 62, "weakness", "none"],
+               "goofy": ["images/goofy.png", 60, "weakness", "none"],
+               "marceline": ["images/marceline.jpg", 62, "weakness", "none"],
                "princess bubblegum": ["images/princess_bubblegum.png", 63, "weakness", "none"],
                "donald duck": ["images/donald_duck.png", 64, "weakness", "none"],
                "shrek": ["images/shrek.png", 70, "weakness", "none"],
@@ -48,26 +48,27 @@ var who_wins = {
                "princess peach": ["images/peach.png", 826, "none", "none"],
                "edward elric": ["images/edward.jpg", 840, "weakness", "none"],
                "zelda": ["images/zelda.png", 842, "none", "none"],
-               "mario": ["images/mario.png", 850, "none", "none"],
-               "luigi": ["images/luigi.jpg", 850, "weakness", "none"],
-               "bowser": ["images/bowser.png", 852, "none", "none"],
-               "voldemort": ["images/voldemort.jpg", 853, "bloodlust", "none"],
-               "luke skywalker": ["images/luke_skywalker.png", 854, "none", "none"],
-               "xemnas": ["images/xemnas.png", 855, "bloodlust", "none"],
+               "mario": ["images/mario.png", 848, "none", "none"],
+               "luigi": ["images/luigi.jpg", 848, "weakness", "none"],
+               "storm": ["images/storm.png", 850, "none", "none"],
+               "bowser": ["images/bowser.png", 851, "none", "none"],
+               "voldemort": ["images/voldemort.jpg", 852, "bloodlust", "none"],
+               "luke skywalker": ["images/luke_skywalker.png", 853, "none", "none"],
+               "xemnas": ["images/xemnas.png", 854, "bloodlust", "none"],
+               "iron man": ["images/iron_man.jpg", 855, "weakness", "none"],
                "mickey mouse": ["images/mickey.png", 856, "weakness", "none"],
-               "darth vader": ["images/darth_vader.png", 860, "bloodlust", "none"],
-               "link": ["images/link.png", 860, "weakness", "none"],
+               "loki": ["images/loki.jpg", 860, "bloodlust", "none"],
                "samus": ["images/samus.jpg", 870, "none", "none"],
-               "loki": ["images/loki.jpg", 900, "bloodlust", "none"],
+               "wolverine": ["images/wolverine.jpg", 875, "weakness", "none"],
+               "spider-man": ["images/spider_man.png", 878, "none", "none"],
+               "gandalf the grey": ["images/gandalf.png", 879, "magicform", "none"],
+               "darth vader": ["images/darth_vader.png", 880, "bloodlust", "none"],
+               "link": ["images/link.png", 890, "weakness", "none"],
                "master chief": ["images/master_chief.png", 900, "none", "none"],
                "cloud": ["images/cloud.png", 915, "none", "none"],
-               "wolverine": ["images/wolverine.jpg", 916, "weakness", "none"],
-               "iron man": ["images/iron_man.jpg", 916, "weakness", "none"],
                "ansem": ["images/ansem.jpg", 980, "bloodlust", "none"],
                "riku": ["images/riku.jpg", 1000, "none", "none"],
                "sora": ["images/sora.png", 1000, "none", "none"],
-               "spider-man": ["images/spider_man.png", 1040, "none", "none"],
-               "storm": ["images/storm.png", 1050, "none", "none"],
                "shadow the hedgehog": ["images/shadow.png", 1069, "none", "none"],
                "sonic the hedgehog": ["images/sonic.jpg", 1070, "weakness", "none"],
                "rosalina": ["images/rosalina.png", 1070, "none", "none"],
@@ -170,16 +171,6 @@ var who_wins = {
         $("#sym").text("=");
         $("#sym").css("margin-top", "5%"); }
     },
-
-    // char1_func: function() {
-    //   try {
-    //     who_wins.char1 = $('#chara1').val().toLowerCase();
-    //     var image1 = who_wins.battlers[who_wins.char1][0];
-    //     $('.char_1').css("background-image", "url(" + image1 + ")");
-    //     who_wins.symbol();
-    //   }
-    //   finally { return false; }
-    // },
 
     char_func: function(n) {
       try {
