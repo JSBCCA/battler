@@ -2,10 +2,12 @@
 // dr. strange > magicform
 // batman > weakness
 // character: image, name, number, attribute1, attribute2
+//$('.char_2').css("background-image", "url(images/sansattack.gif)");
 
 var who_wins = {
+    char1: null,
+    char2: null,
     battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
-               //$('.char_2').css("background-image", "url(images/sansattack.gif)");
                "bambi": ["images/bambi.png", 3, "weakness", "none"],
                "garfield": ["images/garfield.jpg", 2, "weakness", "none"],
                "flowey": ["images/flowey.jpg", 4, "bloodlust", "none"],
@@ -107,11 +109,11 @@ var who_wins = {
                // kirby
 
     symbol: function() {
-      var chara1 = $('#chara1').val().toLowerCase();
+      var chara1 = who_wins.char1;
       var power1 = who_wins.battlers[chara1][1];
       var char1_attr1 = who_wins.battlers[chara1][2];
       var char1_attr2 = who_wins.battlers[chara1][3];
-      var chara2 = $('#chara2').val().toLowerCase();
+      var chara2 = who_wins.char2;
       var power2 = who_wins.battlers[chara2][1];
       var char2_attr1 = who_wins.battlers[chara2][2];
       var char2_attr2 = who_wins.battlers[chara2][3];
@@ -169,28 +171,31 @@ var who_wins = {
         $("#sym").css("margin-top", "5%"); }
     },
 
-    char1_func: function() {
+    // char1_func: function() {
+    //   try {
+    //     who_wins.char1 = $('#chara1').val().toLowerCase();
+    //     var image1 = who_wins.battlers[who_wins.char1][0];
+    //     $('.char_1').css("background-image", "url(" + image1 + ")");
+    //     who_wins.symbol();
+    //   }
+    //   finally { return false; }
+    // },
+
+    char_func: function(n) {
       try {
-        var chara1 = $('#chara1').val().toLowerCase();
-        var image1 = who_wins.battlers[chara1][0];
-        $('.char_1').css("background-image", "url(" + image1 + ")");
-        who_wins.symbol();
+        who_wins['char'+n] = $('#chara'+n).val().toLowerCase();
+        var image = who_wins.battlers[who_wins['char'+n]][0];
+        $('.char_'+n).css("background-image", "url(" + image + ")");
+        if (who_wins.char1 && who_wins.char2) {
+          who_wins.symbol();
+        }
       }
       finally { return false; }
     },
-
-    char2_func: function() {
-      try {
-        var chara2 = $('#chara2').val().toLowerCase();
-        var image2 = who_wins.battlers[chara2][0];
-        $('.char_2').css("background-image", "url(" + image2 + ")");
-        who_wins.symbol();
-      } finally { return false; }
-    }
 }
 
-$("#form1").submit(who_wins.char1_func);
-$("#form2").submit(who_wins.char2_func);
+$("#form1").submit(function () { return who_wins.char_func(1); });
+$("#form2").submit(function () { return who_wins.char_func(2); });
 
-$( "#chara1" ).autocomplete({ source: Object.keys(who_wins.battlers) });
-$( "#chara2" ).autocomplete({ source: Object.keys(who_wins.battlers) });
+$("#chara1").autocomplete({ source: Object.keys(who_wins.battlers) });
+$("#chara2").autocomplete({ source: Object.keys(who_wins.battlers) });
