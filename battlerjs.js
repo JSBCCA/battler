@@ -8,7 +8,8 @@ var who_wins = {
                //$('.char_2').css("background-image", "url(images/sansattack.gif)");
                "bambi": ["images/bambi.png", 3, "weakness", "none"],
                "garfield": ["images/garfield.jpg", 2, "weakness", "none"],
-               "flowey": ["images/flowey.jpg", 4, "bloodlust"],
+               "flowey": ["images/flowey.jpg", 4, "bloodlust", "none"],
+               "spongebob": ["images/spongebob.png", 4, "weakness", "none"],
                "scooby doo": ["images/scooby.jpg", 11, "weakness", "none"],
                "justin bieber": ["images/justin_bieber.jpg", 11, "weakness", "none"],
                "hillary clinton": ["images/clinton.jpg", 13, "weakness", "none"],
@@ -22,7 +23,7 @@ var who_wins = {
                "mettaton ex": ["images/mettaton.jpg", 47, "magicform", "none"],
                "undyne": ["images/undyne.png", 50, "magicform", "none"],
                "marceline": ["images/marceline.jpg", 60, "weakness", "none"],
-               "goofy": ["images/goofy.png", 62, "weakness"],
+               "goofy": ["images/goofy.png", 62, "weakness", "none"],
                "princess bubblegum": ["images/princess_bubblegum.png", 63, "weakness", "none"],
                "donald duck": ["images/donald_duck.png", 64, "weakness", "none"],
                "shrek": ["images/shrek.png", 70, "weakness", "none"],
@@ -91,11 +92,18 @@ var who_wins = {
                "superman": ["images/superman.jpg", 9990, "weakness", "none"],
                "alucard": ["images/alucard.png", 9993, "magicform", "bloodlust"],
                "super vegito": ["images/vegito.png", 9994, "none", "none"],
+               "saitama": ["images/one_punch.png", 9995, "none", "none"],
                "cthulu": ["images/cthulu.jpg", 9996, "magicform", "none"],
                "bill cipher": ["images/bill_cipher.jpg", 9999, "magicform", "none"],
                "asriel dreemurr": ["images/asriel.png", 9999, "magicform", "none"],
                "doctor manhattan": ["images/manhattan.png", 10000, "none", "none"]},
-               // 90
+               // 92
+               // gandalf the grey
+               // steven universe
+               // pearl
+               // perfect cell
+               // itachi uchiha
+               // kirby
 
     symbol: function() {
       var chara1 = $('#chara1').val().toLowerCase();
