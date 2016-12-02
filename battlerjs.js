@@ -38,6 +38,7 @@ var who_wins = {
                "jason vorhees": ["images/jason.jpg", 200, "bloodlust", "none"],
                "roy mustang": ["images/roy.png", 252, "weakness", "none"],
                "steven universe": ["images/steven.png", 300, "none", "none"],
+               "pikachu": ["images/pikachu.png", 305, "none", "none"],
                "pearl": ["images/pearl.jpg", 310, "none", "none"],
                "harry potter": ["images/harry_potter.jpg", 595, "weakness", "none"],
                "hermione": ["images/hermione.jpg", 595, "weakness", "none"],
