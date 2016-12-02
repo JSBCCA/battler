@@ -37,6 +37,8 @@ var who_wins = {
                "the joker": ["images/joker.jpg", 190, "bloodlust", "none"],
                "jason vorhees": ["images/jason.jpg", 200, "bloodlust", "none"],
                "roy mustang": ["images/roy.png", 252, "weakness", "none"],
+               "steven universe": ["images/steven.png", 300, "none", "none"],
+               "pearl": ["images/pearl.jpg", 310, "none", "none"],
                "harry potter": ["images/harry_potter.jpg", 595, "weakness", "none"],
                "hermione": ["images/hermione.jpg", 595, "weakness", "none"],
                "batman": ["images/batman.png", 600, "none", "none"],
@@ -78,13 +80,15 @@ var who_wins = {
                "godzilla": ["images/godzilla.jpg", 5000, "none", "none"],
                "sailor moon": ["images/sailor_moon.jpg", 6500, "none", "none"],
                "wonder woman": ["images/wonder_woman.jpg", 6500, "weakness", "none"],
+               "kirby": ["images/kirby.png", 6505, "weakness", "none"],
                "frieza": ["images/frieza.png", 6510, "bloodlust", "none"],
                "thor": ["images/thor.png", 6550, "none", "none"],
                "naruto": ["images/naruto.png", 6570, "none", "none"],
                "the hulk": ["images/hulk.jpg", 7000, "weakness", "none"],
                "deadpool": ["images/deadpool.jpg", 7001, "bloodlust", "none"],
                "sasuke uchiha": ["images/sasuke.png", 7010, "none", "none"],
-               "madara uchiha": ["images/madara.png", 7011, "bloodlust", "none"],
+               "itachi uchiha": ["images/itachi.png", 7015, "none", "none"],
+               "madara uchiha": ["images/madara.png", 7020, "bloodlust", "none"],
                "perfect cell": ["images/cell.jpg", 7600, "none", "none"],
                "majin buu": ["images/majin_buu.png", 8000, "none", "none"],
                "doctor strange": ["images/doctor_strange.jpg", 8100, "none", "none"],
@@ -102,11 +106,7 @@ var who_wins = {
                "bill cipher": ["images/bill_cipher.jpg", 9999, "magicform", "none"],
                "asriel dreemurr": ["images/asriel.png", 9999, "magicform", "none"],
                "doctor manhattan": ["images/manhattan.png", 10000, "none", "none"]},
-               // 95
-               // steven universe
-               // pearl
-               // itachi uchiha
-               // kirby
+               // 99
 
     symbol: function() {
       var chara1 = who_wins.char1;
