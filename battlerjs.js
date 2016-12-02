@@ -107,7 +107,7 @@ var who_wins = {
                "bill cipher": ["images/bill_cipher.jpg", 9999, "magicform", "none"],
                "asriel dreemurr": ["images/asriel.png", 9999, "magicform", "none"],
                "doctor manhattan": ["images/manhattan.png", 10000, "none", "none"]},
-               // 99
+               // 100
 
     symbol: function() {
       var chara1 = who_wins.char1;
