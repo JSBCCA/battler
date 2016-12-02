@@ -40,6 +40,7 @@ var who_wins = {
                "harry potter": ["images/harry_potter.jpg", 595, "weakness", "none"],
                "hermione": ["images/hermione.jpg", 595, "weakness", "none"],
                "batman": ["images/batman.png", 600, "none", "none"],
+               "alphonse elric": ["images/al.jpg", 610, "weakness", "none"],
                "chun li": ["images/chun_li.png", 620, "weakness", "none"],
                "captain america": ["images/captain_america.png", 800, "weakness", "none"],
                "mega man": ["images/mega_man.png", 820, "weakness", "none"],
@@ -101,10 +102,9 @@ var who_wins = {
                "bill cipher": ["images/bill_cipher.jpg", 9999, "magicform", "none"],
                "asriel dreemurr": ["images/asriel.png", 9999, "magicform", "none"],
                "doctor manhattan": ["images/manhattan.png", 10000, "none", "none"]},
-               // 94
+               // 95
                // steven universe
                // pearl
-               // perfect cell
                // itachi uchiha
                // kirby
 
