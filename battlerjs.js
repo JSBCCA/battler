@@ -42,6 +42,7 @@ var who_wins = {
                "pearl": ["images/pearl.jpg", 310, "none", "none"],
                "harry potter": ["images/harry_potter.jpg", 595, "weakness", "none"],
                "hermione": ["images/hermione.jpg", 595, "weakness", "none"],
+               "ruby rose": ["images/ruby.png", 596, "weakness", "none"],
                "batman": ["images/batman.png", 600, "none", "none"],
                "alphonse elric": ["images/al.jpg", 610, "weakness", "none"],
                "chun li": ["images/chun_li.png", 620, "weakness", "none"],
