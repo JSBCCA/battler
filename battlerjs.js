@@ -2,11 +2,11 @@
 // dr. strange > magicform
 // batman > weakness
 // character: image, name, number, attribute1, attribute2
-//$('.char_2').css("background-image", "url(images/sansattack.gif)");
 
 var who_wins = {
     char1: null,
     char2: null,
+    // character list
     battlers: {"sans": ["images/sans.jpg", 1, "magicform", "none"],
                "bambi": ["images/bambi.png", 3, "weakness", "none"],
                "garfield": ["images/garfield.jpg", 2, "weakness", "none"],
@@ -120,6 +120,7 @@ var who_wins = {
       var char2_attr1 = who_wins.battlers[chara2][2];
       var char2_attr2 = who_wins.battlers[chara2][3];
 
+      // fighter special cases
       if (chara1 == "kid buu" && chara2 == "superman") {
         $("#sym").text(">");
         $("#sym").css("margin-top", "5%"); }
@@ -144,6 +145,7 @@ var who_wins = {
       else if (chara1 == "iron man" && chara2 == "captain america") {
         $("#sym").text("<");
         $("#sym").css("margin-top", "5%"); }
+      // ability special cases
       else if (chara1 == "doctor strange" && (char2_attr1 == "magicform" || char2_attr2 == "magicform")) {
         $("#sym").text(">");
         $("#sym").css("margin-top", "5%"); }
@@ -162,6 +164,7 @@ var who_wins = {
       else if ((char1_attr1 == "bloodlust" || char1_attr2 == "bloodlust") && chara2 == "sans") {
         $("#sym").text("<");
         $("#sym").css("margin-top", "5%"); }
+      // power measurement
       else if (power1 > power2) {
         $("#sym").text(">");
         $("#sym").css("margin-top", "5%"); }
