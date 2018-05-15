@@ -53,3 +53,5 @@ body {
   border-style: solid;
   border-color: rgb(28, 173, 245);
 }
+
+.ui-autocomplete { max-height: 70px; overflow-y: auto; overflow-x: hidden; }
